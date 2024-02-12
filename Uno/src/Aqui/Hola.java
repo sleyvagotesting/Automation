@@ -2,6 +2,7 @@ package Aqui;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class Hola {
@@ -10,11 +11,15 @@ public class Hola {
 		// TODO Auto-generated method stub
 					
 				
-				System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver-win64\\chromedriver.exe");
-				WebDriver driver = new ChromeDriver();
+				//System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver-win64\\chromedriver.exe");
+				//WebDriver driver = new ChromeDriver();
+				
+				System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver-win64\\geckodriver.exe");
+				WebDriver driver = new FirefoxDriver();
 				
 				for(int i = 0 ; i <=5; i++)
 				{
+					
 					System.out.println("ejecutando..." + i);
 					driver.get("https://mvnrepository.com/artifact/org.testng/testng/7.9.0");
 				}
