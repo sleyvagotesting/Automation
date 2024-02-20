@@ -13,8 +13,20 @@ public class Array {
 		lista.add("leyva");
 		lista.add("gonzalez");
 		System.out.println(lista.get(0));
+		System.out.println("************************");
+		
+		//printing array list
+		for(int i = 0; i < lista.size();i++)
+		{
+			System.out.println(lista.get(i));
+		}
 		
 		
+		System.out.println("************************");
+		for(String val :lista)
+		{
+			System.out.println(val);
+		}
 	}
 
 }
