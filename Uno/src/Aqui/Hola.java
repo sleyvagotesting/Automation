@@ -23,6 +23,14 @@ public class Hola {
 				System.setProperty("webdriver.edge.driver", "C:\\ChromeDriver\\chromedriver-win64\\msedgedriver.exe");
 				WebDriver driver = new EdgeDriver();
 				
+				int [] saul = new int[5];
+				saul[0] = 765;
+				saul[1]=7865;
+				saul[2]=654;
+				saul[3]=765;
+				saul[4]=6534;
+				int [] leyva = {1,2,3};
+				String [] nombre = {"saul","leyva","gonzalez"};
 				for(int i = 0 ; i <=5; i++)
 				{
 					
@@ -30,7 +38,26 @@ public class Hola {
 					driver.get("https://mvnrepository.com/artifact/org.testng/testng/7.9.0");
 				}
 				
+				//imprimir array con length
+				for(int i = 0; i<saul.length; i++)
+				{
+					System.out.println(saul[i]);
+				}
+				
+				//para imprimir un array
+				for(int a= 0; a<nombre.length; a++)
+				{
+					System.out.println(nombre[a]);
+				}
+				
+				//par imprimir un array de otro modo mas simple
+				for(String b:nombre)
+				{
+					System.out.println(b);
+				}
 				System.out.println("terminando...");
+				System.out.println(leyva[0]);
+				
 				
 				driver.close();
 				
